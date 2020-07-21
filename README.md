@@ -15,6 +15,10 @@
 - [Dependencies](#dependencies)
 	- [Some Other Dependencies](#some-other-dependencies)
 	- [Fonts](#fonts)
+- [Installing](#installing)
+- [Upcoming](#upcoming)
+
+- [Installing](#installing)
 
 <a name='details'><a>
 ## OS Details ##
@@ -78,3 +82,23 @@ A module to control the brightness. But this has to be configured accoring to yo
 The system font that has been used is [SF Text](https://github.com/perrychan1/fonts.git) or you can download from official Apple website.
 
 Terminal Font is Fira Code by default. It is possible that the font is available in the official repositories of your distro so you can install it from there or you can download from [here](https://github.com/tonsky/FiraCode)
+
+<a name='installing'></a>
+## Installing ##
+
+The installation of my awesomewm config is very simple if you met all the dependencies and the fonts.
+To install, clone this repository onto your system and place all the files into 
+
+```bash
+~/.config/awesome
+```
+And here you go, enjoy your awesomewm journey!
+
+<a name='upcoming'></a>
+## Upcoming ##
+
+1. I will be updating the themes according to the wallpaper color schemes and will probably create a new branch for the newly themed version.
+
+2. I will also document the code a little bit more and will explain the file structure for the beginners.
+
+3. Will also be working on other wm configurations as I rice them XD
