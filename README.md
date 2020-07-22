@@ -16,9 +16,8 @@
 	- [Some Other Dependencies](#some-other-dependencies)
 	- [Fonts](#fonts)
 - [Installing](#installing)
+- [File Structure](#file-structure)
 - [Upcoming](#upcoming)
-
-- [Installing](#installing)
 
 <a name='details'><a>
 ## OS Details ##
@@ -31,7 +30,7 @@
 + **Terminal**: kitty
 + **Editor**  : micro
 
-<a name=features></a>
+<a name='about'></a>
 ## About ##
 + Lighter than usual desktop environments
 + Less RAM Usage and highly customizable
@@ -40,7 +39,7 @@
 + No need to learn entire language
 + This configuration is based on the stable release of the awesomewm
 
-<a name=dependencies></a>
+<a name='dependencies'></a>
 ## Dependencies ##
 The dependencies are kept as low as possible and are common for all distros so the
 config can be used by anyone willing to use awesomewm. Also these packages will most likey be available in the package manager of your linux distro.
@@ -93,6 +92,21 @@ To install, clone this repository onto your system and place all the files into
 ~/.config/awesome
 ```
 And here you go, enjoy your awesomewm journey!
+
+<a name='file-structure'></a>
+## File Structure ##
+
+1. `apps.lua` : This file contains all the details about the apps. The default apps can be changed in the defaul.apps object and the apps that run on start-up can be changed on the run_on_start_up object.
+
+2. `rc.lua`: This is actually the main file for awesomewm which connects all lua files in the directory. Alternatively, we can write all the contents of all the files into the rc.lua file but that will be very messy and lengthy so dividing it into multiple files makes it easier to maintain and understand what each module is responsible for. The theme for the awesomewm can be changed through `.Xresources` file saved in your home directory. If not, create one for your own theme.
+
+3. `tags.lua`: This file is only for the numbering of workspaces. IF you want to change the text on the workspace indicator on the top panel, you just need to change the .png files in the `icons/tags` directory and it will show on the top panel.
+
+4. `keys.lua`: This file contains the keybindings of the spawning and resizing of apps and the mod key. You can change everything by changing the name of the keyboard button.
+
+5. `rules.lua`: This file contains the rules for window spawning, the window borders and the look of the windows. This file can also be used for declaring rules specific to a particular window.
+
+6. `theme.lua`: This file contains the rules for the current theme and the dpi of gaps and if the gaps should be present if only a single window is spawned in a workspace. This file can also be used for declaring and using your own custom layout icons, by placing the icons in `icons/layouts` directory.
 
 <a name='upcoming'></a>
 ## Upcoming ##
